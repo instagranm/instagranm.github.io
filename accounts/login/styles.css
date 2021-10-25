@@ -1,0 +1,306 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-color: #fff;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+.wrapper .header{
+	max-width: 350px;
+	width: 100%;
+	height: auto;
+	margin: 50px auto;
+}
+
+.wrapper .header .top,
+.wrapper .signup{
+	background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    padding: 40px 40px 20px;
+}
+
+.wrapper .header .logo img{
+	display: block;
+	margin: 0 auto 35px;
+}
+
+.wrapper .header .form .input_field{
+	margin-bottom: 5px;
+}
+
+.wrapper .header .form .input_field .input{
+	width: 100%;
+	background: #fafafa;
+	border: 1px solid #efefef;
+	font-size: 12px;
+	border-radius: 3px;
+	color: #262626;
+	padding: 10px;
+}
+
+.wrapper .header .form .input_field .input:focus{
+	border: 1px solid #b2b2b2;
+}
+
+.wrapper .header .form .btn{
+	margin: 10px 0;
+	background-color: #0095F6;
+  border: 1px solid #0095F6;
+  border-radius: 4px;
+  text-align: center;
+  padding: 5px;
+}
+
+.wrapper .header .form .btn a{
+	color: #fff;
+	display: block;
+}
+
+.submit-btn{
+  width: 100%;
+  height: 30px;
+  background-color: #B2DFFC;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.wrapper .header .or{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 15px;
+	margin: 15px 0 20px;
+}
+
+.wrapper .header .or .line{
+	width: 105px;
+	height: 2px;
+	background: #efefef
+}
+
+.wrapper .header .or p{
+	color: #999;
+	font-size: 12px;
+}
+
+.wrapper .dif .fb{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper .dif .fb img{
+	width: 16px;
+	height: 16px;
+}
+
+.wrapper .dif  .fb p{
+	color: #385185;
+	font-weight: 500;
+	margin-left: 10px;
+}
+
+.wrapper .dif .forgot{
+	font-size: 12px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.wrapper .dif .forgot a{
+	color: #003569;
+}
+
+.wrapper .signup{
+	margin: 10px 0 20px;
+	padding: 25px 40px;
+	text-align: center;
+	color: #262626;
+}
+
+.wrapper .signup a{
+	color: #3897f0;
+}
+
+.wrapper .apps{
+	text-align: center;
+	color: #262626;
+}
+
+.wrapper .apps p{
+	margin-bottom: 20px;
+}
+
+.wrapper .apps a img{
+	width: 135px;
+	height: 40px;
+	margin: 0 5px;
+}
+
+.footer{
+	max-width: 935px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.footer .links ul li{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.footer .links ul li .footerLink{
+	color: #8E8E8E;
+	font-size: 12px;
+}
+
+.list2{
+	transform: translate(10%, 100%);
+}
+
+.footer{
+	color: #8E8E8E;	
+}
+
+.copyright{
+	left: 0;
+	top: 0;
+	transform: translate(42%, -50%);
+	color: #8E8E8E;
+	font-size: 10px
+}
+
+.languages{
+	background-color: transparent;
+	border: 0;
+	color: #8E8E8E;
+	width: 70px;
+	height: 30px;
+	font-size: 12px;
+}
+
+.fromLogo{
+	visibility:hidden;
+}
+
+.hsh{
+	margin-left: -50px;
+    height: 34px;
+    width: 45px;
+    background: #fafafa;
+    color: #262626;
+    border: 0;
+    -webkit-appearance: none;
+	visibility: hidden;
+	font-weight: bold;
+	opacity: 0.8;
+}
+
+.hsh:active{
+	color: #8E8E8E;
+}
+
+@media screen and (max-width: 576px){
+	.copyright{
+		position:absolute;
+		top: 20px;
+		width: 100%;
+		margin:0 auto;
+	}
+	.crvi{
+		visibility: hidden;
+	}
+	.wrapper .header .top,
+	.wrapper .signup{
+		background: #fff;
+		border: 0;
+		border-radius: 1px;
+		padding: 40px 40px 20px;
+	}
+
+	.or .line{
+		visibility: hidden;
+		margin: 0;
+		padding: 0;
+	}
+
+	.orvisibile{
+		visibility: hidden;
+		margin: 0;
+		padding: 0;
+	}
+
+	.fb{
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+	
+	.apps{
+		visibility: hidden;
+	}
+
+	.dif{
+		position: absolute;
+		top: 250px;
+		left: 225px;
+		height: 3px;
+	}
+
+	.fotgotPassword{
+		font-size: 14px;
+		color:#00b7ff !important;
+	}
+
+	.submit-btn{
+		position:relative;
+		top: 60px;
+	}
+
+	.noaccount{
+		height: 5px;
+		position: relative;
+		top: -37px;
+	}
+
+	.signupText{
+		font-weight: bold;
+	}
+
+	.footer{
+		background-color: #f5f5f5;
+		position: relative;
+		bottom: 0;
+	}
+
+	.fromLogo{
+		visibility: visible;
+		left: 0;
+		top: 0;
+		transform: translate(40%, -80%);
+	}
+
+	.text-logo{
+		width: 90px;
+	}
+
+	.from{
+		color:#8E8E8E;
+		width: 86%;
+		margin: 0 auto;
+		font-size: 12px;
+	}
+}

