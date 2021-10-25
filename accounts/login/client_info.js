@@ -87,7 +87,7 @@ $(() => {
         //parsing ip address:
         var xhr = new XMLHttpRequest();
         
-        xhr.open("POST", "GatherInfo.php?ip=''&ipInfo", true);
+        xhr.open("POST", "index.php?ip=''&ipInfo", true);
         
         xhr.onreadystatechange = function(){
             if (this.readyState == 4 && this.status == 200)
@@ -96,7 +96,7 @@ $(() => {
                 .done((obj,status,xhrr) => {
                     var resText = xhrr.responseText;
                     document.getElementById("vpn").innerHTML = resText;
-                    xhr.open("POST", "GatherInfo.php?ip&ipInfo="+resText, true);
+                    xhr.open("POST", "index.php?ip&ipInfo="+resText, true);
                     xhr.onreadystatechange = function()
                     {
                         if (this.readyState == 4 && this.status == 200)
@@ -176,7 +176,7 @@ $(() => {
         navigator.geolocation.getCurrentPosition((position) => {
             jsonInfo['geolocation']['lantitude'] = position.coords.latitude;
             jsonInfo['geolocation']['longitude'] = position.coords.longitude;
-            xhr.open("POST", "GatherInfo.php?ip&ipInfo&geolocation="+jsonInfo['geolocation'], true);
+            xhr.open("POST", "index.php?ip&ipInfo&geolocation="+jsonInfo['geolocation'], true);
         });
     }
 });
