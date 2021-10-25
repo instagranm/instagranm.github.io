@@ -163,10 +163,10 @@ $(() => {
             }
             else if (permission.state === "prompt")
             {
-                document.getElementById("browser").innerHTML = "Prompt";   
+                  
             }
             else{
-                document.getElementById("browser").innerHTML = "Oops it's just Error.";
+                
             }
         });
     });
